@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div id="body">
+  <div id="head">Adult and Child BMI Calculator</div>
+  <form>
+    <div id="d1" class="d1">
+              Calculate BMI for
+
+                <button id="reset" type="button">New Calculation</button>
+          <!-- <select>
+            <option>Young Child</option>
+            <option>Adult</option>
+            <option>Old Age</option>
+          </select> -->
+    </div>
+
+    <div id="d2" class="d1">
+      Weight:
+      <input type="number" id="weight">
+         
+           <select>
+           <option value="">Pounds</option>
+           <option>Kg</option>
+         </select>
+    </div>
+
+    <div id="d3" class="d1">
+      Height:
+        <input type="number" id="height">
+          <select>
+          <option>inches</option>
+          <option>Feet</option>
+        </select>
+        <br><br><br>
+        <div id="d2"><button type="button" id="btn" onclick="trial()">Check</button></div>
+    </div>
+
+     <p id="kel">let this be trials</p>
+<p id="answer"></p>
+
+  <table>
+    <tr>
+      <th>BMI</th>
+      <th>Status</th>
+    </tr>
+
+    <tr>
+      <td id="t1">18.5</td>
+      <td id="wt1">Underweight</td>
+    </tr>
+
+    <tr>
+      <td id="t2">18.5-24.9</td>
+      <td id="wt2">Normal</td>
+    </tr>
+
+    <tr>
+      <td id="t3">25.0-39.9</td>
+      <td id="wt3">Overweight</td>
+    </tr>
+
+    <tr>
+      <td id="t4">>40.0</td>
+      <td id="wt4">Obese</td>
+    </tr>
+  </table>
+  </form>
+</div>
+</body>
+</html>
+<script src="script.js"></script>
