@@ -31,7 +31,10 @@
 #d2{
   display: flex;
   justify-content: center;
-  align-content: center;
+}
+
+#reset{
+  margin-left: 5px;
 }
 
 

@@ -23,7 +23,7 @@ if(get>=1 && get <= 18.5){
 }
 };
 
-reset=()=>{
+const reset=()=>{
   let ret = document.getElementById('reset');
   ret.addEventListener('click', function(){
     document.getElementById('wt1').style.backgroundColor = 'white';
@@ -31,7 +31,7 @@ reset=()=>{
     document.getElementById('wt3').style.backgroundColor = 'white';
     document.getElementById('wt4').style.backgroundColor = 'white';
     document.getElementById('weight').value = ' ';
-    let height = document.getElementById('height').value = " ";
+    document.getElementById('height').value = " ";
   })
 }
 reset();
